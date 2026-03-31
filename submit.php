@@ -58,9 +58,13 @@ if ($type === "email") {
         $mail->CharSet = 'UTF-8'; // 👈 TADY
         $mail->Subject = 'Ověření soutěže';
         $mail->Body = "
-            <h2>Ověř svůj vstup</h2>
+            <h2>Díky za zapojení do Soutěže!</h2>
+            <h2>Pro kompletní zapojení do soutěže potřebuju, aby ses ověřil kliknutím na odkaz níže.</h2>
             <p>Klikni níže:</p>
-            <a href='$link'>Ověřit</a>
+            <a href='$link'>Ověřit!</a>
+            <br>
+            <br>
+            <p>Díky,<br>pip-idk</p>
         ";
         
         #$mail->SMTPDebug = 2;
