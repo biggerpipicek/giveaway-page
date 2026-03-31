@@ -168,9 +168,9 @@ function submitForm() {
     .then(res => res.text())
     .then(data => {
         console.log(data);
-
+        alert(data);
         // 👇 TADY redirect
-        window.location.href = "success.html";
+        //window.location.href = "success.html";
     });
     }
 </script>

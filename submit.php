@@ -7,7 +7,10 @@ ini_set('display_errors', 1);
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
+
+print_r(get_declared_classes());
+exit();
 require 'config.php';
 
 // 🔹 2. DB PŘIPOJENÍ
@@ -77,5 +80,5 @@ if ($type === "email") {
 }
 
 // 🔹 9. REDIRECT
-header("refresh:1; url=success.html");
-exit();
+//header("refresh:1; url=success.html");
+//exit();
